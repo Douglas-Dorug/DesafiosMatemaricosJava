@@ -37,7 +37,7 @@ public class SegundoDesafio {
 
         for (int linha = 0; linha<= Matriz.length -1;linha++) {
             for (int coluna = 0; coluna<= Matriz[linha].length -1; coluna++) {
-                if (coluna < linha && coluna > Matriz.length -linha - 1) soma += Matriz[linha][coluna];
+                if (coluna < linha && coluna < Matriz.length -linha - 1) soma += Matriz[linha][coluna];
             }
         }
 
